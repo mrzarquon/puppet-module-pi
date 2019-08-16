@@ -1,0 +1,16 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "input_method": "environment",
+  "description": "This ensures the right version of puppet is installed, will probably be deprecated someday when https://github.com/petems/puppet-install-shell is updated",
+  "parameters": {
+    "puppet_version": {
+      "type": "String",
+      "description": "Version of Puppet to check is present"
+    },
+    "puppet_deb_url": {
+      "type": "String",
+      "description": "URL of debian package to download if it is needed to install, will change as we get it in a repo somewhere"
+    }
+  }
+}
