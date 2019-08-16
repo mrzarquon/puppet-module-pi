@@ -6,8 +6,6 @@ plan pi::bootstrap (
   $bootstrap_class = 'pi::helloworld',
 ) {
 
-  #add_to_group($nodes, 'raspberrybootstrap')
-
   if $remove_gem {
     $rm_results = run_task('pi::rm_gem_puppet', $nodes)
     $rm_results.each |$result| {
